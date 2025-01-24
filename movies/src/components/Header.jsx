@@ -19,7 +19,7 @@ export const Header = () => {
             <li className="nav-item"><NavLink to="/movies/upcoming" className="nav-link">Add Movies</NavLink></li>
           </ul>
           <form action="#">
-            <input type="search" className="form-control " placeholder="search"/>
+            <input type="search" className="form-control" placeholder="search"/>
           </form>
         </div>
       </div>
