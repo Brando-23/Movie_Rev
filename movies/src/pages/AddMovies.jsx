@@ -32,16 +32,19 @@ export const AddMovies = () => {
                 label: "Ratings",
                 data: reviews.map((review) => review.rating),
                 backgroundColor: "#1dd1a1",
+                
               },
             ],
           },
           options: {
+          
             responsive: true,
             plugins: {
               legend: {
-                display: true,
-                position: "top",
+                display: false,
+               
               },
+
             },
           },
         });
@@ -55,7 +58,7 @@ export const AddMovies = () => {
       };
     }, [reviews]); // Add reviews as dependency
 
-    return <canvas ref={ref1} width={400} height={400}></canvas>;
+    return <canvas ref={ref1} width={1000} height={500}></canvas>;
   };
 
   const [reviews, setReviews] = useState([]);
@@ -68,7 +71,7 @@ export const AddMovies = () => {
   return (
     <main className="container mt-5">
         <h4 className="text-dark py-2 border-bottom mb-3 fw-bold">USER REVIEWS</h4>
-        <div style={{width:"50%",height:"2%"}}>
+        <div style={{ width: "100%", height: "500px" }}>
         <Barcharts reviews={reviews} />
         </div>
       {reviews.length > 0 ? (
