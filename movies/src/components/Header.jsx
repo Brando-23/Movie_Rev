@@ -21,7 +21,7 @@ export const Header = () => {
 
           {/* inga filter varanuminga filter varanum */}
           <form action="#">
-            <input type="search" className="form-control " placeholder="search"/>
+            <input type="search" className="form-control" placeholder="search"/>
           </form>
         </div>
       </div>

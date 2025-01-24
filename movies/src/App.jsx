@@ -1,5 +1,3 @@
-
-
 import './App.css'
 import { Footer,Header } from './components'
 import AllRoute from './Routes/AllRoute'
