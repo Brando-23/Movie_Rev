@@ -33,3 +33,8 @@ body{
     width: 50%;
     height: 50%;
 }
+#menu li:hover{
+    text-decoration: underline rgb(255, 255, 255);
+    font-weight: bold;
+    
+}

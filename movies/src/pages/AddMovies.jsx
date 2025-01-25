@@ -71,6 +71,9 @@ export const AddMovies = () => {
   return (
     <main className="container mt-5">
         <h4 className="text-dark py-2 border-bottom mb-3 fw-bold">USER REVIEWS</h4>
+        <div className=" w-50 p-3 mb-3 bg-light text-dark">
+          <h5 className="card-text">✨"Based on the rated movies, plan a rewatch and enjoy your holidays!"✨</h5>  
+        </div>
         <div style={{ width: "100%", height: "500px" }}>
         <Barcharts reviews={reviews} />
         </div>

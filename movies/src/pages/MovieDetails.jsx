@@ -73,7 +73,7 @@ export const MovieDetails = () => {
             <i>⭐{movie.vote_average}</i> 📑 {movie.vote_count} 
          </h5>
          <table className="table mt-4 w-50 table-bordered">
-          <thead><h3>Movie Information</h3></thead>
+          <thead><h3>Movie Informations</h3></thead>
           <tbody>
           <tr>
             <th>Runtime:</th>
