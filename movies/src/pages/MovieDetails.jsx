@@ -61,6 +61,43 @@ export const MovieDetails = () => {
         <div className="col-md-8">
           <h3 className="text-primary">{movie.title}</h3>
           <p className="mt-3">{movie.overview}</p>
+          {movie.genres ? (
+            <p>
+            {movie.genres.map((genre) => (
+              <span key={genre.id} className="badge bg-warning me-2 text-dark fs-6">
+                {genre.name}
+              </span>
+            ))}</p>
+          ) : ("")}
+          <h5 className="text-dark">
+            <i>⭐{movie.vote_average}</i> 📑 {movie.vote_count} 
+         </h5>
+         <table className="table mt-4 w-50 table-bordered">
+          <thead><h3>Movie Information</h3></thead>
+          <tbody>
+          <tr>
+            <th>Runtime:</th>
+            <td>{movie.runtime}Mins</td>
+          </tr>
+          <tr>
+            <th>Budget:</th>
+            <td>{movie.budget}$</td>
+          </tr>
+          <tr>
+            <th>Revenue:</th>
+            <td>{movie.revenue}$</td>
+          </tr>
+          <tr>
+            <th>Popularity:</th>
+            <td>{movie.popularity}</td>
+          </tr>
+          <tr>
+            <th>Release Date: </th>
+            <td> {movie.release_date}</td>
+          </tr>
+          </tbody>
+         </table>
+
         </div>
       </div>
 

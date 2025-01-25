@@ -92,11 +92,11 @@ export const AddMovies = () => {
               <div className="col-md-8">
                 <div className="card-body">
                   <h5 className="card-title">{review.title}</h5>
-                  <p className="card-text">{review.review}</p>
-                  <p className="text-muted">
+                  <p className="card-text">Review:{review.review}</p>
+                  <p className="text-dark">
                     <i>Rating: {review.rating}</i>
                   </p>
-                  <p className="text-muted">
+                  <p className="text-dark">
                     <i>Submitted on: {new Date(review.timestamp).toLocaleString()}</i>
                   </p>
                 </div>

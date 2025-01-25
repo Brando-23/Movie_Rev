@@ -16,13 +16,13 @@ export const Header = () => {
           <ul className="navbar-nav me-auto mb-2 mb-md-0">
             <li className="nav-item"><NavLink to="/" className="nav-link">Home</NavLink></li>
             <li className="nav-item"><NavLink to="/movies/top" className="nav-link">Top Movies</NavLink></li>
-            <li className="nav-item"><NavLink to="/movies/upcoming" className="nav-link">Reviews</NavLink></li>
+            <li className="nav-item"><NavLink to="/movies/upcoming" className="nav-link">My Reviews</NavLink></li>
           </ul>
 
           {/* inga filter varanuminga filter varanum */}
-          <form action="#">
+          {/* <form action="#">
             <input type="search" className="form-control" placeholder="search"/>
-          </form>
+          </form> */}
         </div>
       </div>
 
@@ -30,3 +30,4 @@ export const Header = () => {
     </>
   )
 }
+
